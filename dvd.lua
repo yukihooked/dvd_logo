@@ -18,7 +18,7 @@ while task.wait(1/60) do
   end
 
   position += speed
-  Image.Position = position
+  image.Position = position
 end
 
 workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(function()
