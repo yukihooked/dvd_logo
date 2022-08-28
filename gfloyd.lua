@@ -9,11 +9,11 @@ local position = Vector2.new(100, 100)
 local speed = Vector2.new(10, 10)
 
 while task.wait(1/60) do
-  if (position.X + 128 >= workspace.CurrentCamera.ViewportSize.X or position.X <= 0) then
+  if (position.X + image.Size.X >= workspace.CurrentCamera.ViewportSize.X or position.X <= 0) then
     speed = Vector2.new(-speed.X, speed.Y)
   end
 
-  if (position.Y + 128 >= workspace.CurrentCamera.ViewportSize.Y or position.Y <= 0) then
+  if (position.Y + image.Size.Y >= workspace.CurrentCamera.ViewportSize.Y or position.Y <= 0) then
     speed = Vector2.new(speed.X, -speed.Y)
   end
 
