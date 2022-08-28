@@ -14,7 +14,7 @@ while task.wait(1/60) do
   end
 
   if (position.Y + 128 >= workspace.CurrentCamera.ViewportSize.Y or position.Y <= 0) then
-    speed = Vector2.new(Speed.X, -speed.Y)
+    speed = Vector2.new(speed.X, -speed.Y)
   end
 
   position += speed
